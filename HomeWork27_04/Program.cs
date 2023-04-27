@@ -38,12 +38,16 @@ do
 
    if (otv == "1")
    {
+      Console.Clear();
+      Console.WriteLine("\tЧисло палиндром");
       Console.WriteLine("Введите число : ");
       int number = Convert.ToInt32(Console.ReadLine());
       Pallindrom(number);
    }
    if (otv == "2")
    {
+      Console.Clear();
+      Console.WriteLine("\tТаблица кубов");
       Console.WriteLine("Введите число : ");
       int number = Convert.ToInt32(Console.ReadLine());
       Cube(number);
@@ -53,7 +57,7 @@ do
 
    }
 
-   Console.WriteLine("Выход -> N \nПродолжить  - Y");
+   Console.WriteLine("Выход -> \tN \nПродолжить  ->  Y");
    otv = Console.ReadLine();
    if (otv == "N" || otv == "n")
    {
