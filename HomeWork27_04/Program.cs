@@ -27,6 +27,12 @@ void Cube(int num)
    }
    Console.WriteLine("");
 }
+
+double Line(double xa, double xb, double ya, double yb, double za, double zb)
+{
+   double koordinates = Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2) + Math.Pow(zb - za, 2));
+   return Math.Round(koordinates, 2);
+}
 string otv;
 bool flag = true;
 do
@@ -55,6 +61,21 @@ do
    if (otv == "3")
    {
 
+      Console.Clear();
+      Console.WriteLine(" Input X to A : ");
+      double xa = Convert.ToDouble(Console.ReadLine());
+      Console.WriteLine(" Input X to B : ");
+      double xb = Convert.ToDouble(Console.ReadLine());
+      Console.WriteLine(" Input Y to A : ");
+      double ya = Convert.ToDouble(Console.ReadLine());
+      Console.WriteLine(" Input Y to B : ");
+      double yb = Convert.ToDouble(Console.ReadLine());
+      Console.WriteLine(" Input Z to A : ");
+      double za = Convert.ToDouble(Console.ReadLine());
+      Console.WriteLine(" Input Z to B : ");
+      double zb = Convert.ToDouble(Console.ReadLine());
+
+      Console.WriteLine(Line(xa, xb, ya, yb, za, zb));
    }
 
    Console.WriteLine("Выход -> \tN \nПродолжить  ->  Y");
